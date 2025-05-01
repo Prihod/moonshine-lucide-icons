@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<meta-storm xmlns="meta-storm">
+    <definitions>
+        <classMethod
+                class="\MoonShine\Contracts\UI\HasIconContract"
+                method="icon"
+                argument="0"
+        >
+            <files extension="svg" xpath="$project/vendor/prihod/moonshine-lucide-icons/resources/svg"/>
+        </classMethod>
+
+        <classMethod
+                class="\MoonShine\UI\Components\Breadcrumbs"
+                method="prepend"
+                argument="2"
+        >
+            <files extension="svg" xpath="$project/vendor/prihod/moonshine-lucide-icons/resources/svg"/>
+        </classMethod>
+
+        <classMethod
+                class="\MoonShine\UI\Components\Breadcrumbs"
+                method="add"
+                argument="2"
+        >
+            <files extension="svg" xpath="$project/vendor/prihod/moonshine-lucide-icons/resources/svg"/>
+        </classMethod>
+
+        <classMethod
+                class="\MoonShine\UI\Components\Icon"
+                method="make"
+                argument="0"
+        >
+            <files extension="svg" xpath="$project/vendor/prihod/moonshine-lucide-icons/resources/svg"/>
+        </classMethod>
+
+        <classMethod
+                class="\MoonShine\Laravel\Notifications\MoonShineNotification"
+                method="send"
+                argument="4"
+        >
+            <files extension="svg" xpath="$project/vendor/prihod/moonshine-lucide-icons/resources/svg"/>
+        </classMethod>
+
+        <classConstructor
+                class="\MoonShine\Support\Attributes\Icon"
+                argument="0"
+        >
+            <files extension="svg" xpath="$project/vendor/prihod/moonshine-lucide-icons/resources/svg"/>
+        </classConstructor>
+
+        <classConstructor
+                class="\MoonShine\MenuManager\Attributes\Group"
+                argument="1"
+        >
+            <files extension="svg" xpath="$project/vendor/prihod/moonshine-lucide-icons/resources/svg"/>
+        </classConstructor>
+    </definitions>
+</meta-storm>
