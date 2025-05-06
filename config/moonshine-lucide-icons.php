@@ -2,20 +2,27 @@
 
 return [
 
-    // Префикс компонентов: <x-lucide-camera />
+    // Component prefix: <x-lucide-camera />
     'prefix' => 'lucide',
 
-    // Иконка по умолчанию, если заданной нет
+    // Default icon if the specified one is not found
     'fallback' => '',
 
-    // CSS-класс по умолчанию
+    // Default CSS class
     'class' => '',
 
-    // Дополнительные SVG-атрибуты
+    // Additional SVG attributes
     'attributes' => [
         // 'width' => 24,
         // 'height' => 24,
         // 'aria-hidden' => 'true',
     ],
+
+    // Cache configuration
+   /* 'cache' => [
+        'enabled' => true,
+        'key' => 'blade-lucide-icons',
+        'ttl' => null, // unlimited storage time
+    ],*/
 
 ];
