@@ -1,3 +1,5 @@
+<!-- MoonShine v3 -->
+
 @php
     use Illuminate\Support\Str;
 @endphp
@@ -27,7 +29,7 @@
         @include("moonshine::icons.$icon", array_merge([
             'size' => $size,
             'color' => $color,
-            'icon' => $icon,
+            'v3.icon' => $icon,
             'path' => $path,
         ]))
     @elseif($icon)

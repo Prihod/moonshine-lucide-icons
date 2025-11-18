@@ -7,14 +7,14 @@ use MoonShine\Laravel\Commands\InstallCommand;
 use MoonShine\Laravel\Providers\MoonShineServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Prihod\MoonShineLucideIcons\Providers\MoonShineLucideIconsServiceProvider;
+use Prihod\MoonShineLucideIcons\Support\MoonshineVersion;
+use Prihod\MoonShineLucideIcons\Support\MoonshineVersionContract;
 
 abstract class TestCase extends OrchestraTestCase
 {
     protected function setUp(): void
     {
         parent::setUp();
-
-        // $this->performApplication();
     }
 
     protected function defineEnvironment($app): void
@@ -27,6 +27,8 @@ abstract class TestCase extends OrchestraTestCase
         $app['config']->set('moonshine-lucide-icons', [
             'prefix' => 'lucide',
         ]);
+
+        $app->singleton(MoonshineVersionContract::class, MoonshineVersion::class);
     }
 
     protected function performApplication(): static
@@ -42,7 +44,7 @@ abstract class TestCase extends OrchestraTestCase
         return $this;
     }
 
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             BladeIconsServiceProvider::class,
